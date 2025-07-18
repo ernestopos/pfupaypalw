@@ -1,4 +1,4 @@
-import { PDFDocument, rgb } from 'pdf-lib';
+/*import { PDFDocument, rgb } from 'pdf-lib';
 
 async function generatePDF(donation) {
   const pdfDoc = await PDFDocument.create();
@@ -61,7 +61,7 @@ async function sendEmail(to, pdfBytes) {
       ]
     })
   });
-}
+}*/
 
 /*export default {
   async fetch(request) {
@@ -80,8 +80,8 @@ async function sendEmail(to, pdfBytes) {
 };*/
 
 export async function onRequestPost(context) {
-  const donation = await context.request.json();
-  const pdfBytes = await generatePDF(donation);
+  //const donation = await context.request.json();
+  //const pdfBytes = await generatePDF(donation);
 
   // Aún no enviamos correo en este paso (puedes integrarlo luego)
   return new Response('PDF generado', { status: 200 });
