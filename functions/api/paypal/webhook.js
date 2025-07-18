@@ -63,7 +63,7 @@ async function sendEmail(to, pdfBytes) {
   });
 }
 
-export default {
+/*export default {
   async fetch(request) {
     if (request.method === 'POST') {
       const donation = await request.json();
@@ -77,4 +77,12 @@ export default {
 
     return new Response('Método no permitido', { status: 405 });
   }
-};
+};*/
+
+export async function onRequestPost(context) {
+  const donation = await context.request.json();
+  const pdfBytes = await generatePDF(donation);
+
+  // Aún no enviamos correo en este paso (puedes integrarlo luego)
+  return new Response('PDF generado', { status: 200 });
+}
