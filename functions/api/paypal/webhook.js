@@ -1,5 +1,5 @@
 
-import { PDFDocument, rgb } from 'https://esm.sh/pdf-lib';
+import { PDFDocument, rgb } from 'pdf-lib';
 
 /*import { PDFDocument, rgb } from 'pdf-lib';
 
