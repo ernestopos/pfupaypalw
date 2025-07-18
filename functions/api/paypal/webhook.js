@@ -1,5 +1,7 @@
 
-import { PDFDocument, rgb } from 'pdf-lib';
+//import { PDFDocument, rgb } from 'pdf-lib';
+
+import { jsPDF } from "jspdf";
 
 /*import { PDFDocument, rgb } from 'pdf-lib';
 

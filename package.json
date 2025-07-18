@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "description": "Cloudflare Pages function for receiving PayPal donation webhooks",
   "type": "module",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jspdf": "^2.5.1"
+  }
 }
